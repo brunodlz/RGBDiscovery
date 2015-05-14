@@ -25,15 +25,39 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        startWithAnimation()
         updateColor()
         updateRGB()
         updateHex()
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
 
+    func startWithAnimation() {
+        self.redLabel.center.x = self.view.frame.width + 30
+        self.greenLabel.center.x = self.view.frame.width + 30
+        self.blueLabel.center.x = self.view.frame.width + 30
+        
+        UIView.animateWithDuration(1.0, delay: 0, usingSpringWithDamping: 1.0, initialSpringVelocity: 1.0, options: nil, animations: { () -> Void in
+            self.redLabel.center.x = self.view.frame.width / 2
+            }, completion: nil)
+        
+        UIView.animateWithDuration(1.0, delay: 0.1, usingSpringWithDamping: 1.0, initialSpringVelocity: 1.0, options: nil, animations: { () -> Void in
+            self.greenLabel.center.x = self.view.frame.width / 2
+            }, completion: nil)
+        
+        UIView.animateWithDuration(1.0, delay: 0.2, usingSpringWithDamping: 1.0, initialSpringVelocity: 1.0, options: nil, animations: { () -> Void in
+            self.blueLabel.center.x = self.view.frame.width / 2
+            }, completion: nil)
+        
+        UIView.animateWithDuration(1.0, delay: 0.3, usingSpringWithDamping: 1.0, initialSpringVelocity: 1.0, options: nil, animations: { () -> Void in
+            self.hexLabel.center.x = self.view.frame.width / 0.5
+            }, completion: nil)
+    }
+    
     @IBAction func updateBackground() {
         updateColor()
         updateRGB()
