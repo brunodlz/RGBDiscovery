@@ -7,14 +7,14 @@
 	<key>IDESourceControlProjectIdentifier</key>
 	<string>F2DF2C10-4560-411A-B200-B7F36457414A</string>
 	<key>IDESourceControlProjectName</key>
-	<string>project</string>
+	<string>RGBDiscovery</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>89B91F7EAE2F03F538D2B2E742FF1ECC70099274</key>
 		<string>https://github.com/brunov0id/RGBDiscovery.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>RGBDiscovery.xcodeproj/project.xcworkspace</string>
+	<string>RGBDiscovery.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>89B91F7EAE2F03F538D2B2E742FF1ECC70099274</key>
