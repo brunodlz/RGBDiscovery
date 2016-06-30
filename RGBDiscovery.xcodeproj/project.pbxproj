@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		159F43411D25D7D400E24337 /* DetectColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 159F43401D25D7D400E24337 /* DetectColor+Extension.swift */; };
 		7C3C8D411B04C73200CB8E59 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C3C8D401B04C73200CB8E59 /* AppDelegate.swift */; };
 		7C3C8D431B04C73200CB8E59 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C3C8D421B04C73200CB8E59 /* ViewController.swift */; };
 		7C3C8D461B04C73200CB8E59 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7C3C8D441B04C73200CB8E59 /* Main.storyboard */; };
@@ -26,6 +27,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		159F43401D25D7D400E24337 /* DetectColor+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DetectColor+Extension.swift"; sourceTree = "<group>"; };
 		7C3C8D3B1B04C73200CB8E59 /* RGBDiscovery.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RGBDiscovery.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7C3C8D3F1B04C73200CB8E59 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7C3C8D401B04C73200CB8E59 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -56,6 +58,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		159F43421D25DC8400E24337 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				7C3C8D401B04C73200CB8E59 /* AppDelegate.swift */,
+				7C3C8D421B04C73200CB8E59 /* ViewController.swift */,
+				159F43441D25DCD800E24337 /* Extension */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		159F43431D25DC9800E24337 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				7C3C8D441B04C73200CB8E59 /* Main.storyboard */,
+				7C3C8D491B04C73200CB8E59 /* LaunchScreen.xib */,
+			);
+			name = Storyboard;
+			sourceTree = "<group>";
+		};
+		159F43441D25DCD800E24337 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				159F43401D25D7D400E24337 /* DetectColor+Extension.swift */,
+			);
+			name = Extension;
+			sourceTree = "<group>";
+		};
 		7C3C8D321B04C73100CB8E59 = {
 			isa = PBXGroup;
 			children = (
@@ -77,11 +106,9 @@
 		7C3C8D3D1B04C73200CB8E59 /* RGBDiscovery */ = {
 			isa = PBXGroup;
 			children = (
-				7C3C8D401B04C73200CB8E59 /* AppDelegate.swift */,
-				7C3C8D421B04C73200CB8E59 /* ViewController.swift */,
-				7C3C8D441B04C73200CB8E59 /* Main.storyboard */,
+				159F43421D25DC8400E24337 /* Classes */,
+				159F43431D25DC9800E24337 /* Storyboard */,
 				7C3C8D471B04C73200CB8E59 /* Images.xcassets */,
-				7C3C8D491B04C73200CB8E59 /* LaunchScreen.xib */,
 				7C3C8D3E1B04C73200CB8E59 /* Supporting Files */,
 			);
 			path = RGBDiscovery;
@@ -216,6 +243,7 @@
 			files = (
 				7C3C8D431B04C73200CB8E59 /* ViewController.swift in Sources */,
 				7C3C8D411B04C73200CB8E59 /* AppDelegate.swift in Sources */,
+				159F43411D25D7D400E24337 /* DetectColor+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
