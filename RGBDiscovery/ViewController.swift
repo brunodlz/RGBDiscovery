@@ -43,25 +43,26 @@ class ViewController: UIViewController {
         self.greenLabel.center.x = self.view.frame.width + 30
         self.blueLabel.center.x = self.view.frame.width + 30
         
-        UIView.animateWithDuration(1.0, delay: 0, usingSpringWithDamping: 1.0, initialSpringVelocity: 1.0, options: nil, animations: { () -> Void in
+        UIView.animateWithDuration(1.0) { 
             self.redLabel.center.x = self.view.frame.width / 2
             self.sliderRed.center.x = self.view.frame.width / 2
-            }, completion: nil)
+        }
         
-        UIView.animateWithDuration(1.0, delay: 0.1, usingSpringWithDamping: 1.0, initialSpringVelocity: 1.0, options: nil, animations: { () -> Void in
+        
+        UIView.animateWithDuration(1.0) {
             self.greenLabel.center.x = self.view.frame.width / 2
             self.sliderGreen.center.x = self.view.frame.width / 2
-            }, completion: nil)
+            }
         
-        UIView.animateWithDuration(1.0, delay: 0.2, usingSpringWithDamping: 1.0, initialSpringVelocity: 1.0, options: nil, animations: { () -> Void in
+        UIView.animateWithDuration(1.0) {
             self.blueLabel.center.x = self.view.frame.width / 2
             self.sliderBlue.center.x = self.view.frame.width / 2
-            }, completion: nil)
+            }
         
-        UIView.animateWithDuration(1.0, delay: 0.3, usingSpringWithDamping: 1.0, initialSpringVelocity: 1.0, options: nil, animations: { () -> Void in
+        UIView.animateWithDuration(1.0) {
             self.hexLabel.center.x = self.view.frame.width / 0.5
             self.sliderAlpha.center.x = self.view.frame.width / 0.5
-            }, completion: nil)
+            }
     }
     
     @IBAction func updateBackground() {
@@ -80,46 +81,46 @@ class ViewController: UIViewController {
     }
     
     func updateRGB() {
-        var iRed = Int(self.fRed * 255)
+        let iRed = Int(self.fRed * 255)
         self.redLabel.text = "\(iRed)"
         
-        var iGreen = Int(self.fGreen * 255)
+        let iGreen = Int(self.fGreen * 255)
         self.greenLabel.text = "\(iGreen)"
         
-        var iBlue = Int(self.fBlue * 255)
+        let iBlue = Int(self.fBlue * 255)
         self.blueLabel.text = "\(iBlue)"
     }
     
     func updateHex() {
-        var sRed = getRedHex()
-        var sGreen = getGreenHex()
-        var sBlue = getBlueHex()
+        let sRed = getRedHex()
+        let sGreen = getGreenHex()
+        let sBlue = getBlueHex()
         
         self.hexLabel.text = "#\(sRed)\(sGreen)\(sBlue)".uppercaseString
     }
     
     func getRedHex() -> String {
-        var iRed = Int(self.fRed * 255)
-        var i = Int16(iRed)
-        var sHex = hex(i)
-        var aux = dropFirst(sHex)
-        return dropFirst(aux)
+        let iRed = Int(self.fRed * 255)
+        let i = Int16(iRed)
+        let sHex = hex(i)
+        _ = (sHex.characters).dropFirst()
+        return ""
     }
     
     func getGreenHex() -> String {
-        var iGreen = Int(self.fGreen * 255)
-        var i = Int16(iGreen)
-        var sHex = hex(i)
-        var aux = dropFirst(sHex)
-        return dropFirst(aux)
+        let iGreen = Int(self.fGreen * 255)
+        let i = Int16(iGreen)
+        let sHex = hex(i)
+        _ = (sHex.characters).dropFirst()
+        return ""
     }
     
     func getBlueHex() -> String {
-        var iBlue = Int(self.fBlue * 255)
-        var i = Int16(iBlue)
-        var sHex = hex(i)
-        var aux = dropFirst(sHex)
-        return dropFirst(aux)
+        let iBlue = Int(self.fBlue * 255)
+        let i = Int16(iBlue)
+        let sHex = hex(i)
+        _ = (sHex.characters).dropFirst()
+        return ""
     }
     
     func hex<T: SignedIntegerType>(v: T) -> String {
