@@ -14,7 +14,13 @@ extension UISlider {
         return Int(value * 255)
     }
 
-    func hex<T: SignedIntegerType>(object: T) -> String {
+    func getHex(value: CGFloat) -> String {
+        let multiplied = Int(value * 255)
+        let hex = Int16(multiplied)
+        return String(self.convert(hex).characters.dropFirst(2))
+    }
+
+    func convert<T: SignedIntegerType>(object: T) -> String {
         var result = ""
         var counter = object.toIntMax()
         for _ in 0..<sizeof(T)*2 {

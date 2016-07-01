@@ -3,7 +3,7 @@
 //  RGBDiscovery
 //
 //  Created by bruno da luz on 5/14/15.
-//  Copyright (c) 2015 bruno v0id. All rights reserved.
+//  Copyright (c) 2015 Bruno da Luz. All rights reserved.
 //
 
 import UIKit
@@ -63,6 +63,12 @@ class ViewController: UIViewController {
         let red    = CGFloat(self.sliderRed.value)
         let green  = CGFloat(self.sliderGreen.value)
         let blue   = CGFloat(self.sliderBlue.value)
+
+        let hexRed   = self.sliderRed.getHex(red)
+        let hexGreen = self.sliderGreen.getHex(green)
+        let hexBlue  = self.sliderBlue.getHex(blue)
+
+        self.hexLabel.text = "#\(hexRed)\(hexGreen)\(hexBlue)".uppercaseString
 
         self.redLabel.text   = "\(self.sliderRed.number(red))"
         self.greenLabel.text = "\(self.sliderGreen.number(green))"
