@@ -31,28 +31,15 @@ class ViewController: UIViewController {
     }
 
     func startWithAnimation() {
-
         let frameWidth = self.view.frame.width
 
         self.redLabel.center.x   = frameWidth + 30
         self.greenLabel.center.x = frameWidth + 30
         self.blueLabel.center.x  = frameWidth + 30
 
-        UIView.animateWithDuration(1.0) {
-            self.redLabel.center.x  = frameWidth / 2
-            self.sliderRed.center.x = frameWidth / 2
-        }
-
-
-        UIView.animateWithDuration(1.0) {
-            self.greenLabel.center.x  = frameWidth / 2
-            self.sliderGreen.center.x = frameWidth / 2
-        }
-
-        UIView.animateWithDuration(1.0) {
-            self.blueLabel.center.x  = frameWidth / 2
-            self.sliderBlue.center.x = frameWidth / 2
-        }
+        self.view.animation(frameWidth, label: self.redLabel, slider: self.sliderRed)
+        self.view.animation(frameWidth, label: self.greenLabel, slider: self.sliderGreen)
+        self.view.animation(frameWidth, label: self.blueLabel, slider: self.sliderBlue)
     }
 
     @IBAction func updateBackground() {
