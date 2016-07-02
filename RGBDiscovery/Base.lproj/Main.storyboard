@@ -102,7 +102,7 @@
                                 <blurEffect style="light"/>
                             </visualEffectView>
                             <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Vc4-a1-h4o">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="107"/>
+                                <rect key="frame" x="0.0" y="94" width="320" height="107"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="HyY-Ik-Ye1">
                                     <rect key="frame" x="0.0" y="0.0" width="320" height="107"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -204,15 +204,27 @@
                                 </constraints>
                                 <blurEffect style="light"/>
                             </visualEffectView>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2YP-vD-ufM">
+                                <rect key="frame" x="0.0" y="20" width="320" height="74"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="74" id="jhc-p7-mgU"/>
+                                </constraints>
+                                <items>
+                                    <navigationItem title="RGB" prompt="Discovery" id="O1Q-SV-0ee"/>
+                                </items>
+                            </navigationBar>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstAttribute="trailing" secondItem="2YP-vD-ufM" secondAttribute="trailing" id="4ii-PE-9XI"/>
+                            <constraint firstItem="2YP-vD-ufM" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="CT3-dF-X07"/>
                             <constraint firstAttribute="trailing" secondItem="Vc4-a1-h4o" secondAttribute="trailing" id="K7n-Y5-Ct2"/>
                             <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="BFU-Nh-s64" secondAttribute="bottom" id="MvT-ce-gaa"/>
                             <constraint firstAttribute="trailing" secondItem="BFU-Nh-s64" secondAttribute="trailing" id="VOA-hE-poQ"/>
                             <constraint firstItem="BFU-Nh-s64" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="iCY-M5-Vk1"/>
-                            <constraint firstItem="Vc4-a1-h4o" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="topMargin" id="v9t-b8-ZwF"/>
+                            <constraint firstItem="2YP-vD-ufM" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" id="no4-Jl-d07"/>
                             <constraint firstItem="Vc4-a1-h4o" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="w2T-jW-3Kb"/>
+                            <constraint firstItem="Vc4-a1-h4o" firstAttribute="top" secondItem="2YP-vD-ufM" secondAttribute="bottom" id="wUF-eC-j8y"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="RGB Discovery" id="pEU-kR-wWm">
