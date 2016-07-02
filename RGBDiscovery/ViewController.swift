@@ -21,11 +21,19 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
         startWithAnimation()
         updateColor()
+        effectView()
     }
 
+    func effectView() {
+        let bounds = self.navigationController?.navigationBar.bounds as CGRect!
+        let visualEffectView = UIVisualEffectView(effect: UIBlurEffect(style: .Light))
+        visualEffectView.frame = bounds
+        visualEffectView.autoresizingMask = [.FlexibleWidth, .FlexibleHeight]
+        self.navigationController?.navigationBar.addSubview(visualEffectView)
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
