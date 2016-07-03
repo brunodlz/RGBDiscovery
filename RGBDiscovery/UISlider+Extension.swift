@@ -1,5 +1,5 @@
 //
-//  DetectColor+Extension.swift
+//  UISlider+Extension.swift
 //  RGBDiscovery
 //
 //  Created by Bruno da Luz on 6/30/16.

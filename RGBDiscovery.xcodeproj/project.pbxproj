@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		159F43411D25D7D400E24337 /* DetectColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 159F43401D25D7D400E24337 /* DetectColor+Extension.swift */; };
+		159F43411D25D7D400E24337 /* UISlider+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 159F43401D25D7D400E24337 /* UISlider+Extension.swift */; };
 		15F59F941D2823A400345DB7 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15F59F931D2823A400345DB7 /* UIView+Extension.swift */; };
 		7C3C8D411B04C73200CB8E59 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C3C8D401B04C73200CB8E59 /* AppDelegate.swift */; };
 		7C3C8D431B04C73200CB8E59 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C3C8D421B04C73200CB8E59 /* ViewController.swift */; };
@@ -28,7 +28,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		159F43401D25D7D400E24337 /* DetectColor+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DetectColor+Extension.swift"; sourceTree = "<group>"; };
+		159F43401D25D7D400E24337 /* UISlider+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UISlider+Extension.swift"; sourceTree = "<group>"; };
 		15F59F931D2823A400345DB7 /* UIView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 		7C3C8D3B1B04C73200CB8E59 /* RGBDiscovery.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RGBDiscovery.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7C3C8D3F1B04C73200CB8E59 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -82,7 +82,7 @@
 		159F43441D25DCD800E24337 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
-				159F43401D25D7D400E24337 /* DetectColor+Extension.swift */,
+				159F43401D25D7D400E24337 /* UISlider+Extension.swift */,
 				15F59F931D2823A400345DB7 /* UIView+Extension.swift */,
 			);
 			name = Extension;
@@ -247,7 +247,7 @@
 				7C3C8D431B04C73200CB8E59 /* ViewController.swift in Sources */,
 				7C3C8D411B04C73200CB8E59 /* AppDelegate.swift in Sources */,
 				15F59F941D2823A400345DB7 /* UIView+Extension.swift in Sources */,
-				159F43411D25D7D400E24337 /* DetectColor+Extension.swift in Sources */,
+				159F43411D25D7D400E24337 /* UISlider+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
