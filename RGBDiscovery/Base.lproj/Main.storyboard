@@ -216,7 +216,11 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="RGB Discovery" id="pEU-kR-wWm">
-                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="4fL-Qq-69y"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="4fL-Qq-69y">
+                            <connections>
+                                <segue destination="dPH-a5-Fau" kind="push" id="H0K-9L-zwC"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="blueLabel" destination="g6q-Vy-nYi" id="6Fh-bg-ysJ"/>
@@ -231,6 +235,25 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="715" y="233"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Uwj-VT-7Gw">
+            <objects>
+                <viewController id="dPH-a5-Fau" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="EWi-ae-vNJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="zJk-2G-abb"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ouf-TH-67Z">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="1vE-nq-sbP"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PcA-zK-tJ6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1143" y="233"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="OuG-uN-vB4">
